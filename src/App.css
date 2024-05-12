@@ -1,99 +1,45 @@
-.login-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f1f1f1;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.welcome-message {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.login-button {
-  background-color: #007bff;
-  color: #fff;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-button:hover {
-  background-color: #0069d9;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
-.connected-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f1f1f1;
-}
 
-.connected-header {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.connected-account {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.connected-button {
-  background-color: #007bff;
-  color: #fff;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 0.3rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-bottom: 2rem;
-}
-
-.connected-button:hover {
-  background-color: #0069d9;
-}
-
-.connected-contract-address {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-
-.candidates-table {
-  border-collapse: collapse;
-  width: 50%;
-  text-align:center;
-}
-
-.candidates-table th, .candidates-table td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
-
-.candidates-table th {
-  background-color: #f2f2f2;
-}
-
-input[type=number] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+*{
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
+
+.custom-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./Components/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+
+.isolateClass{
+  isolation: isolate;
+}
