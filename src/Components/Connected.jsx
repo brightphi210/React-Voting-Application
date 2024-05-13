@@ -101,7 +101,7 @@ const Connected = (props) => {
                             <h3 className="font-bold text-lg pt-10">Hello!, Please Vote below</h3>
                             <form method="dialog">
                                 <select className="select w-full border border-slate-300 mt-5">
-                                <option disabled selected>Select your constituency!</option>
+                                <option disabled selected>Select your Region!</option>
                                 <option>Khomas</option>
                                 <option>Ohangwena</option>
                                 <option>Omusati</option>
