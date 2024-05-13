@@ -46,20 +46,20 @@ const Connected = (props) => {
             </div> */}
             <Navbar />
 
-            <div className='flex justify-center items-center px-[20rem] pt-[6rem] bg-gradient-to-r from-slate-950 to-slate-900 h-screen'>
+            <div className='flex justify-center items-center lg:px-[20rem] px-[10rem] pt-[6rem] bg-gradient-to-r from-slate-950 to-slate-900 lg:h-screen h-full'>
                 
                 <div>
-                    <div className="pb-10">
-                        <p className="text-center text-white text-2xl"><span className="text-md text-slate-400">Metamask Account:</span> <br /> {props.account}</p>
+                    <div className="pb-10 lg:pt-0 pt-20">
+                        <p className="text-center text-white lg:text-2xl text-md"><span className="text-md text-slate-400">Metamask Account:</span> <br /> {props.account}</p>
                         <p className="text-center text-white pt-4">Remaining Time: {props.remainingTime}</p>
                     </div>
 
 
                     <div className='flex gap-12 lg:flex-row flex-col'>
                         <div className="w-full">
-                            <div className=' bg-slate-900 rounded-xl'>
+                            <div className=' bg-slate-900 rounded-xl w-full'>
                                 <div className="h-64 overflow-hidden">
-                                    <img src={image1} alt="" className='lg:w-full rounded-lg'/>
+                                    <img src={image1} alt="" className='lg:w-full w-full rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
@@ -70,9 +70,9 @@ const Connected = (props) => {
                         </div>
 
                         <div className="w-full">
-                            <div className=' bg-slate-900 rounded-xl'>
+                            <div className=' bg-slate-900 rounded-xl w-full'>
                                 <div className="h-64 overflow-hidden">
-                                <img src={image2} alt="" className='lg:w-full rounded-lg'/>
+                                    <img src={image2} alt="" className='lg:w-full w-full rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
@@ -83,9 +83,9 @@ const Connected = (props) => {
                         </div>
 
                         <div className="w-full">
-                            <div className=' bg-slate-900 rounded-xl'>
+                            <div className=' bg-slate-900 rounded-xl w-full'>
                                 <div className="h-64 overflow-hidden">
-                                <img src={image3} alt="" className='lg:w-full rounded-lg'/>
+                                    <img src={image3} alt="" className='lg:w-full w-full rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
