@@ -5,92 +5,57 @@ import image3 from './images/images.jpeg.jpg'
 import Navbar from "./Navbar";
 
 const Connected = (props) => {
+    console.log('This is my status', props.votingStatus);
     return (
 
         <div>
-
-            {/* <div className="connected-container">
-                <h1 className="connected-header">You are Connected to Metamask</h1>
-                <p className="connected-account">Metamask Account: {props.account}</p>
-                <p className="connected-account">Remaining Time: {props.remainingTime}</p>
-                { props.showButton ? (
-                    <p className="connected-account">You have already voted</p>
-                ) : (
-                    <div>
-                        <input type="number" placeholder="Entern Candidate Index" value={props.number} onChange={props.handleNumberChange}></input>
-                <br />
-                <button className="login-button" onClick={props.voteFunction}>Vote</button>
-
-                    </div>
-                )}
-                
-                <table id="myTable" className="candidates-table">
-                    <thead>
-                    <tr>
-                        <th>Index</th>
-                        <th>Candidate name</th>
-                        <th>Candidate votes</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {props.candidates.map((candidate, index) => (
-                        <tr key={index}>
-                        <td>{candidate.index}</td>
-                        <td>{candidate.name}</td>
-                        <td>{candidate.voteCount}</td>
-                        </tr>
-                    ))}
-                    </tbody>
-                </table>
-                
-            </div> */}
             <Navbar />
 
-            <div className='flex justify-center items-center lg:px-[20rem] px-[10rem] pt-[6rem] bg-gradient-to-r from-slate-950 to-slate-900 lg:h-screen h-full'>
+            <div className='flex justify-center items-center lg:px-[10rem] px-[10rem] pt-[6rem] bg-gradient-to-r from-slate-950 to-slate-900 lg:h-screen h-full'>
                 
                 <div>
                     <div className="pb-10 lg:pt-0 pt-20">
-                        <p className="text-center text-white lg:text-2xl text-md"><span className="text-md text-slate-400">Metamask Account:</span> <br /> {props.account}</p>
-                        <p className="text-center text-white pt-4">Remaining Time: {props.remainingTime}</p>
+                        <p className="text-center text-white lg:text-md text-md"><span className="text-md text-slate-400">Metamask Account:</span> <br /> {props.account}</p>
+                        <p className="text-center text-white pt-2 text-xs">Remaining Time: {props.remainingTime}</p>
                     </div>
 
 
                     <div className='flex gap-12 lg:flex-row flex-col'>
                         <div className="w-full">
                             <div className=' bg-slate-900 rounded-xl w-full'>
-                                <div className="h-64 overflow-hidden">
-                                    <img src={image1} alt="" className='lg:w-full w-full rounded-lg'/>
+                                <div className="lg:h-60 overflow-hidden">
+                                    <img src={image1} alt="" className='lg:w-full w-full  rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
-                                    <h2 className="text-white text-lg">Netumbo Nandi-Ndaitwah</h2>
-                                    <p className="ml-auto text-white">(SWAPO)</p>
+                                    <h2 className="text-white text-xs">Netumbo Nandi-Ndaitwah</h2>
+                                    <p className="ml-auto text-white text-xs">(SWAPO)</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="w-full">
                             <div className=' bg-slate-900 rounded-xl w-full'>
-                                <div className="h-64 overflow-hidden">
-                                    <img src={image2} alt="" className='lg:w-full w-full rounded-lg'/>
+                                <div className="h-60 overflow-hidden">
+                                    <img src={image2} alt="" className='lg:w- lg:h-56 w-full rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
-                                    <h2 className="text-white text-lg">Panduleni Itula</h2>
-                                    <p className="ml-auto text-white">(IPC)</p>
+                                    <h2 className="text-white text-xs">Panduleni Itula</h2>
+                                    <p className="ml-auto text-white text-xs">(IPC)</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="w-full">
                             <div className=' bg-slate-900 rounded-xl w-full'>
-                                <div className="h-64 overflow-hidden">
-                                    <img src={image3} alt="" className='lg:w-full w-full rounded-lg'/>
+                                <div className="h-60 overflow-hidden">
+                                    <img src={image3} alt="" className='lg:w-full w-full lg:h-56 rounded-lg'/>
                                 </div>
 
                                 <div className="px-5 py-5 flex items-center">
-                                    <h2 className="text-white text-lg">McHenry Venaani</h2>
-                                    <p className="ml-auto text-white">(PDM)</p>
+                                    <h2 className="text-white text-xs">McHenry Venaani</h2>
+                                    <p className="ml-auto text-white text-xs">(PDM)</p>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +136,7 @@ const Connected = (props) => {
                         </dialog>
                     </div>
 
-                    <button onClick={()=>document.getElementById('my_modal_3').showModal()} class="btn w-1/2 btn-active flex m-auto mt-10 btn-primary bg-white text-black border-none hover:bg-purple-100 py-3 px-10">
+                    <button onClick={()=>document.getElementById('my_modal_3').showModal()} class="btn w-1/2 btn-active flex m-auto mt-5 btn-primary bg-white text-black border-none hover:bg-purple-100 py-3 px-10">
                         Continue to vote
                     </button>
                 </div>

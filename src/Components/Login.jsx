@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 const Login = ({connectWallet, account}) => {
 
 
-    {console.log(account)}
 
     return (
         <div className='custom-bg px-5'>

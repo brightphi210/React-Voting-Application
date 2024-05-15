@@ -91,7 +91,7 @@ function MainApp() {
         contractAddress, contractAbi, signer
       );
       const status = await contractInstance.getVotingStatus();
-      console.log(status);
+      // console.log(status);
       setVotingStatus(status);
   }
 
